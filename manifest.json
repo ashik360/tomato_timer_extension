@@ -1,0 +1,35 @@
+{
+    "manifest_version":  3,
+    "name":  "টমেটো টাইমার",
+    "version":  "1.2.0",
+    "description":  "বাংলা ভাষায় পোমোডোরো টাইমার এক্সটেনশন",
+    "permissions":  [
+                        "alarms",
+                        "storage",
+                        "tabs",
+                        "offscreen",
+                        "scripting"
+                    ],
+    "background":  {
+                       "service_worker":  "background.js"
+                   },
+    "action":  {
+                   "default_icon":  {
+                                        "16":  "icons/icon16.png",
+                                        "48":  "icons/icon48.png",
+                                        "128":  "icons/icon128.png"
+                                    },
+                   "default_title":  "টমেটো টাইমার"
+               },
+    "icons":  {
+                  "16":  "icons/icon16.png",
+                  "48":  "icons/icon48.png",
+                  "128":  "icons/icon128.png"
+              },
+    "minimum_chrome_version":  "116",
+    "host_permissions":  [
+                             "http://*/*",
+                             "https://*/*",
+                             "file:///*"
+                         ]
+}
